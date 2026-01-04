@@ -1,0 +1,284 @@
+/* ---------------------------------
+   Global Reset & Basic Styling
+----------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  background-color: #fff;
+}
+
+/* ---------------------------------
+   Navbar
+----------------------------------*/
+.navbar-brand {
+  letter-spacing: 3px;
+}
+
+/* ---------------------------------
+   Carousel Section
+----------------------------------*/
+.carousel-item {
+  height: 650px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Background Images for Slides */
+#slide1 {
+  background-image: url("/Images/Background/slider-1.jpg");
+}
+
+#slide2 {
+  background-image: url("/Images/Background/slider-2.jpg");
+}
+
+/* Text Overlay on Carousel */
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.25);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding-top: 100px;
+}
+
+.carousel-caption h1 {
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 1.3;
+}
+
+.btn-primary {
+  background-color: #0d6efd;
+  border: none;
+  font-weight: 500;
+  border-radius: 6px;
+}
+
+.btn-primary:hover {
+  background-color: #084bcc;
+}
+
+/* Carousel indicators position */
+.carousel-indicators {
+  position: absolute;
+  top: 550px;
+}
+
+/* ---------------------------------
+   About Section
+----------------------------------*/
+.underline {
+  width: 60px;
+  height: 3px;
+  background-color: #007bff;
+}
+
+h2 {
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.img-fluid {
+  position: relative;
+  left: 0;
+}
+
+#Construction-About {
+  position: relative;
+  left: 70px;
+  width: 550px;
+}
+
+/* ---------------------------------
+   Recent Projects Section
+----------------------------------*/
+section.text-center h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+section.text-center p {
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.7;
+  color: #6c757d;
+}
+
+/* Blue underline under heading */
+section.text-center .mx-auto.mb-4 {
+  background-color: #007bff;
+}
+
+/* Button styling */
+section.text-center .btn-primary {
+  background-color: #0d6efd;
+  border: none;
+  font-weight: 500;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+section.text-center .btn-primary:hover {
+  background-color: #084bcc;
+}
+
+/* Image Grid Centering */
+.project-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 1100px;
+  padding-left: 220px;
+  
+}
+
+.project-gallery img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  display: block;
+  margin: 0 auto;
+}
+
+.project-gallery .project-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.project-gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.project-gallery .project-item:hover img {
+  transform: scale(1.1);
+}
+
+.project-gallery .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* black with opacity */
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.project-gallery .project-item:hover .overlay {
+  opacity: 1;
+}
+
+.project-gallery .overlay i {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.project-gallery .overlay h5 {
+  font-size: 1rem;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#services {
+  background-color: #fff;
+}
+
+#services .underline {
+  width: 50px;
+  height: 3px;
+  background-color: #007bff;
+}
+
+/* Service Box Styling */
+.service-box {
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.service-box i {
+  font-size: 60px;
+  color: #007bff;
+  transition: transform 0.3s ease;
+}
+
+.service-box h5 {
+  margin-top: 15px;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
+
+.service-box p {
+  color: #6c757d;
+  margin-top: 10px;
+  font-size: 0.95rem;
+}
+
+/* Hover Effect */
+.service-box:hover {
+  transform: translateY(-10px);
+}
+
+.service-box:hover i {
+  transform: scale(1.1);
+}
+
+/* View All Button */
+#services .btn-primary {
+  background-color: #007bff;
+  border: none;
+  font-weight: 500;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+#services .btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.contact-cta {
+  background-color: #007bff;
+  margin-top: -40px;
+}
+
+footer a:hover {
+  color: #007bff;
+}
+
+/* ---------------------------------
+   Responsive Tweaks
+----------------------------------*/
+@media (max-width: 992px) {
+  .img-fluid {
+    left: 0;
+    width: 100%;
+  }
+
+  #Construction-About {
+    left: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  #services p {
+    font-size: 0.9rem;
+  }
+}
